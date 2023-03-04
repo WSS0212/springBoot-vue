@@ -108,8 +108,8 @@ public class FileController {
         }
 
         queryWrapper.orderByDesc("id");
-        IPage<Files> userIPage = filesMapper.selectPage(page, queryWrapper);
-        return Result.success(userIPage);
+        IPage<Files> filesIPageIPage = filesMapper.selectPage(page, queryWrapper);
+        return Result.success(filesIPageIPage);
     }
 
     /**
